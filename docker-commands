@@ -1,0 +1,33 @@
+$ docker version
+
+$ docker info
+
+$ docker container run -it -p 80:80 nginx
+
+$ docker container ls   or $ docker container ps   or $ docker ps 
+
+$ docker container ls -a 
+
+$ docker container rm <id>
+
+$ docker images
+
+$ docker image rm <id>
+
+$ docker pull nginx
+
+$ docker container run -d -p 80:80 --name nginx-web nginx
+
+$ docker container run -d -p 3306:3306 --name mysql --env MYSQL_ROOT_PASSWORD=<required password> mysql
+
+$ docker container stop <name>
+
+$ docker container rm -f <name>
+
+$ docker container exec -it nginx-web bash
+
+$ docker rm -f $(docker ps -qa)
+
+$ docker container run -d -p 80:80 -v $(pwd):/usr/share/nginx/html --name nginx-web nginx
+
+
